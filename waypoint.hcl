@@ -1,7 +1,7 @@
 project = "demo-waypoint"
 
 app "helloworld" {
-    build {
+  build {
         use "pack" {
             builder="gcr.io/buildpacks/builder:v1"
         }
@@ -13,6 +13,7 @@ app "helloworld" {
         }
       }
     }
+  
   deploy {
     use "kubernetes" {
     probe_path = "/"
